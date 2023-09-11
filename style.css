@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(61, 39, 39);
+}
+
+canvas {
+    border: solid 2px black;
+    background-color: white;
+}
+
+.toolbox{
+    background-color: rgb(130, 101, 101);
+    width: 604px;
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    padding: 1rem;
+    gap: 10px;
+}
+
+.toolbox span{
+    font-size: 20px;
+    color: white;
+}
+
+.toolbox button{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+}
+
+.toolbox .right-tool{
+    border-radius: 10px;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-tool span{
+    margin-right: 10px;
+}
+
+.toolbox input{
+    /* border: 2px solid black; */
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-broom{
+    color: rgb(130, 101, 101);
+    font-size: 25px;
+    background-color: white;
+}
+
+.brushes{
+    display: flex;
+    gap: 5px;
+}
+
+.brushes i{
+    background-color: white;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(130, 101, 101);
+}

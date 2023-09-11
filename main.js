@@ -89,6 +89,7 @@ canvas.addEventListener('mousemove', (e) => {
 
         // drawCircle(x2, y2);
         drawCircle(x2, y2);
+        drawLine(x, y, x2, y2);
         x = x2;
         y = y2;
     }
@@ -107,7 +108,7 @@ function drawLine(x1, y1, x2, y2) {
     ctx.lineTo(x2, y2);
     // ctx.arc(x, y, size, 0, Math.PI * 2);
     ctx.strokeStyle = color;
-    ctx.lineWidth = size;
+    ctx.lineWidth = size * 2;
     ctx.stroke();
 }
 
